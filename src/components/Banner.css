@@ -1,0 +1,34 @@
+.banner-photo {
+  height: calc(100vh - 56px);
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+#carouselContent {
+  background: black;
+}
+
+.logo-fluid {
+  max-height: 1em;
+  margin-bottom: .1em;
+}
+
+.carousel-caption h1 {
+  font-size: 2.25em;
+}
+
+@media (min-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 4em;
+  }
+}
+
+.carousel-caption p {
+  font-size: 1.25em;
+}
+
+@media (min-width: 576px) {
+  .carousel-caption p {
+    font-size: 1.75em;
+  }
+}

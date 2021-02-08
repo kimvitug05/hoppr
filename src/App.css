@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

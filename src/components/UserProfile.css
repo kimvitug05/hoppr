@@ -1,0 +1,9 @@
+.rounded {
+  border-radius: 1em !important;;
+}
+
+.avatar-img {
+  border-width: 8px !important;
+  margin-top: -50%;
+  max-width: 15em;
+}
