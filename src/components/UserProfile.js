@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './UserProfile.css'
-import LocationCardsContainer from './LocationCardsContainer'
+import DestinationCarousel from './DestinationCarousel'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
 
@@ -102,8 +102,8 @@ const UserProfile = () => {
           </div>
         </div> */}
         <div className="pt-5">
-          <LocationCardsContainer title="Favorites" destinations={ topDestinations }/>
-          <LocationCardsContainer title="Recently Viewed" destinations={ topDestinations }/>
+          <DestinationCarousel title="Favorites" destinations={ topDestinations }/>
+          <DestinationCarousel title="Recently Viewed" destinations={ topDestinations }/>
         </div>
       </div>
     </div>

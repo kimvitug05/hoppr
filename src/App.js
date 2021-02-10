@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
-import LocationCardsContainer from './components/LocationCardsContainer'
+import DestinationCarousel from './components/DestinationCarousel'
 import '@fortawesome/fontawesome-free/js/all.js'
 import Footer from './components/Footer'
 import Login from './components/Login'
@@ -34,20 +34,20 @@ const topDestinations = [
     name: 'Los Angeles',
   },
   {
-    id: 1,
-    imageUrl: 'https://vacations.hawaiilife.com/sites/default/files/uploads/kahului_maui.jpg',
-    name: 'Maui',
+    id: 6,
+    imageUrl: 'https://images.unsplash.com/photo-1540232058434-8e7394b7e847?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    name: 'Los Angeles',
   },
   {
-    id: 2,
+    id: 5,
     imageUrl: 'https://images.unsplash.com/photo-1505245208761-ba872912fac0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     name: 'San Diego',
   },
   {
-    id: 3,
-    imageUrl: 'https://images.unsplash.com/photo-1540232058434-8e7394b7e847?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    name: 'Los Angeles',
-  }
+    id: 4,
+    imageUrl: 'https://vacations.hawaiilife.com/sites/default/files/uploads/kahului_maui.jpg',
+    name: 'Maui',
+  },
 ]
 
 function App() {
@@ -63,9 +63,9 @@ function App() {
               <Route exact path="/">
                 <Banner />
                 <div id='destinations' className="container py-5">
-                  <LocationCardsContainer title='Top Destinations' destinations={ topDestinations }/>
-                  <LocationCardsContainer title='Top Beaches' destinations={ topDestinations }/>
-                  <LocationCardsContainer title='Top International' destinations={ topDestinations }/>
+                  <DestinationCarousel title='Top Destinations' destinations={ topDestinations }/>
+                  <DestinationCarousel title='Top Beaches' destinations={ topDestinations }/>
+                  <DestinationCarousel title='Top International' destinations={ topDestinations }/>
                 </div>
               </Route>
               <PrivateRoute exact path="/profile" component={ UserProfile } /> 

@@ -51,7 +51,7 @@ const Navbar = () => {
                       { currentUser.displayName }
                     </span>
                   </a>
-                  <ul className="dropdown-menu dropdown-menu-dark dropdown-menu-right" aria-labelledby="userDropdown">
+                  <ul className="dropdown dropdown-menu dropdown-menu-dark dropdown-menu-right" aria-labelledby="userDropdown">
                     <li><Link className="dropdown-item py-2" to="/profile">Profile</Link></li>
                     <li><Link className="dropdown-item py-2" to="/settings">Settings</Link></li>
                     <li><hr class="dropdown-divider" /></li>

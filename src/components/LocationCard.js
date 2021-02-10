@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Heart from 'react-animated-heart'
+import './LocationCard.css'
 
 const LocationCard = ({ photo, title }) => {
+  const [isClick, setClick] = useState(false);
+
   return (
   <div className="container">
-    <div className="mb-3 card overflow-hidden rounded" style={{ width: "20rem", zIndex: "10", overflow: "hidden" }}>
-      <img className="card-img-top" src={ photo } alt="Card image" style={{ width: "100%", zIndex: "1" }} />
+    <div className="card full-width mb-3 overflow-hidden rounded">
+      <img className="card-img-top full-width" src={ photo } alt="Card image" style={{ objectFit: 'cover' }} />
       <div className="d-flex flex-row justify-content-between card-body">
         <h4 className="card-title mb-0 text-left text-truncate">{ title }</h4>
-        <i className="far fa-heart fa-lg ml-2" style={{ color: "#c62828"  }}></i>
+        <Heart className="favorite-button" isClick={isClick} onClick={() => setClick(!isClick)} />
       </div>
     </div>
   </div>
