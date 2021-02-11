@@ -4,8 +4,7 @@ import { Link, useHistory } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 
 const SignUp = () => {
-  const firstnameRef = useRef()
-  const lastnameRef = useRef()
+  const displayNameRef = useRef()
   const emailRef = useRef()
   const passwordRef = useRef()
   const confirmPasswordRef = useRef()
@@ -45,14 +44,9 @@ const SignUp = () => {
             <form id="signup-form" className="form" onSubmit={ handleSubmit }>
               <h3 className="text-center text-info">Sign Up</h3>
               <div className="form-group">
-                <label for="firstname" className="text-info">First Name:</label>
+                <label for="firstname" className="text-info">Display Name:</label>
                 <br />
-                <input type="text" name="firstname" id="firstname" className="form-control" required="true" ref={ firstnameRef } />
-              </div>
-              <div className="form-group">
-                <label for="lastname" className="text-info">Last Name:</label>
-                <br />
-                <input type="text" name="lastname" id="lastname" className="form-control" required="true" ref={ lastnameRef } />
+                <input type="text" name="displayName" id="displayName" className="form-control" required="true" ref={ displayNameRef } />
               </div>
               <div className="form-group">
                 <label for="email" className="text-info">Email:</label>

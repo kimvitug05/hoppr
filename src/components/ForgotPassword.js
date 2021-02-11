@@ -29,7 +29,7 @@ export default function ForgotPassword() {
     <div className="my-5 container">
       { error && <div className="pb-2 alert alert-danger">{ error }</div> }
       { message && <div className="pb-2 alert alert-success">{ message }</div> }
-      <h2 className="text-center mb-4">Password Reset</h2>
+      <h3 className="text-center text-info">Forgot Password</h3>
       <div id="signup-row" className="row justify-content-center align-items-center">
         <div id="signup-column" className="col-md-6">
           <div id="signup-box" className="col-md-12">

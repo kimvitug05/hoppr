@@ -10,3 +10,9 @@
 .bZNLvn {
   background-position: -2800px !important;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}

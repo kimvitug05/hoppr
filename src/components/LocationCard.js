@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Heart from 'react-animated-heart'
+import { Link } from 'react-router-dom'
 import './LocationCard.css'
 
 const LocationCard = ({ photo, title }) => {
