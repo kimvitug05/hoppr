@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import LocationCard from './LocationCard'
+import { useAuth } from '../contexts/AuthContext'
+
 import DestinationCarousel from './DestinationCarousel'
-import { Switch } from 'react-router-dom'
 import axios from 'axios'
 import './Destination.css'
 const BASE_URL = 'http://localhost:8080/destinations'
@@ -10,14 +10,26 @@ const amusement = require('../data/amusement.json')
 const beach = require('../data/beaches.json')
 
 const Destination = (props) => {
+  const { currentUser } = useAuth()
   const [destination, setDestination] = useState(null)
   const slug = props.match.params.slug
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/${slug}`).then((response) => {
-      setDestination(response.data);
-    })
-  }, [ slug ])
+    const assignDestination = async () => {
+      let firebaseToken = ''
+      if (currentUser) {
+        firebaseToken = await currentUser.getIdToken()
+      }
+      await axios.get(`${BASE_URL}/${slug}`, {
+        headers: {
+          Authorization: firebaseToken ? `Bearer ${firebaseToken}` : undefined
+        }
+      }).then((response) => {
+        setDestination(response.data);
+      })
+    }
+    assignDestination()
+  }, [ currentUser, slug ])
 
   const yelpDestinations = restaurants.businesses.map(place => ({
     imageUrl: place.image_url,

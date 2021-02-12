@@ -1,14 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './UserProfile.css'
 import DestinationCarousel from './DestinationCarousel'
 import { useAuth } from '../contexts/AuthContext'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import UserProfileModal from './UserProfileModal'
+import axios from 'axios'
+
+const BASE_URL = 'http://localhost:8080/recent-destinations'
 
 const UserProfile = () => {
   const [error, setError] = useState('')
   const { currentUser, logout } = useAuth()
   const history = useHistory()
+  const [recentDestinations, setRecentDestinations] = useState([]);
+
+  useEffect(() => {
+    const assignRecentDestinations = async () => {
+      let firebaseToken = ''
+      if (currentUser) {
+        firebaseToken = await currentUser.getIdToken()
+      }
+      await axios.get(BASE_URL, {
+        headers: {
+          Authorization: firebaseToken ? `Bearer ${firebaseToken}` : undefined
+        }
+      }).then((response) => {
+        setRecentDestinations(response.data);
+      })
+    }
+    assignRecentDestinations()
+  }, [ currentUser ])
   
   async function handleLogout() {
     setError('')
@@ -78,7 +99,10 @@ const UserProfile = () => {
       <div className="container">
         <div className="pt-5">
           <DestinationCarousel title="Favorites" destinations={ topDestinations }/>
-          <DestinationCarousel title="Recently Viewed" destinations={ topDestinations }/>
+          {
+            recentDestinations.length && 
+            <DestinationCarousel title="Recently Viewed" destinations={ recentDestinations }/>
+          }
         </div>
       </div>
     </div>
