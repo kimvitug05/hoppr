@@ -1,0 +1,777 @@
+{
+  "businesses": [
+      {
+          "id": "lMAtnepDzFy-8B6A2qq5NA",
+          "alias": "diagon-alley-orlando",
+          "name": "Diagon Alley",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/pMfiA9q88Hr52jkWvj4sow/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/diagon-alley-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 240,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.4794109280137,
+              "longitude": -81.4697048050346
+          },
+          "transactions": [],
+          "location": {
+              "address1": "Exposition Blvd",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "Exposition Blvd",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 11003.286678486806
+      },
+      {
+          "id": "C5KsefkHScMHZ50q0g19PA",
+          "alias": "the-wizarding-world-of-harry-potter-orlando-5",
+          "name": "The Wizarding World of Harry Potter",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/7Deg3R4RzVVSQOxVFQWShQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-wizarding-world-of-harry-potter-orlando-5?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 201,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 5.0,
+          "coordinates": {
+              "latitude": 28.47957,
+              "longitude": -81.469405
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Blvd",
+              "address2": null,
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Blvd",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+19545581784",
+          "display_phone": "(954) 558-1784",
+          "distance": 10969.214652447734
+      },
+      {
+          "id": "n8sm8Fm7FFz3LD94Urtcag",
+          "alias": "hogwarts-express-hogsmeade-station-orlando",
+          "name": "Hogwarts Express Hogsmeade Station",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/yHaITa8DZe-6zJekozv2wg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/hogwarts-express-hogsmeade-station-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 537,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              },
+              {
+                  "alias": "trainstations",
+                  "title": "Train Stations"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.474139,
+              "longitude": -81.472517
+          },
+          "transactions": [],
+          "location": {
+              "address1": "1000 Universal Studios Plz",
+              "address2": "",
+              "address3": "Universal Studios Islands of Adventure",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "1000 Universal Studios Plz",
+                  "Universal Studios Islands of Adventure",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11577.371486401777
+      },
+      {
+          "id": "1lrqjKkhBx8lhu5LDIrzzA",
+          "alias": "revenge-of-the-mummy-orlando",
+          "name": "Revenge of the Mummy",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/3Edp05r0GuLqwclXFiDSPw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/revenge-of-the-mummy-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 174,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.4775951,
+              "longitude": -81.4746897
+          },
+          "transactions": [],
+          "location": {
+              "address1": "1000 Universal Studios Plz",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "1000 Universal Studios Plz",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11451.43540571048
+      },
+      {
+          "id": "EWEe_ssfLnAnpeBE7RLrcg",
+          "alias": "harry-potter-and-the-forbidden-journey-orlando",
+          "name": "Harry Potter and the Forbidden Journey",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/AIo2pqM2EVghl-3zUkDhhA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/harry-potter-and-the-forbidden-journey-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 368,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.4721589573998,
+              "longitude": -81.4735500931515
+          },
+          "transactions": [],
+          "location": {
+              "address1": "1000 Universal Studios Plz",
+              "address2": "",
+              "address3": "Universal Studios Islands of Adventure",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "1000 Universal Studios Plz",
+                  "Universal Studios Islands of Adventure",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11793.18971310857
+      },
+      {
+          "id": "LJAX23kWD3HzZM3kZD6w-g",
+          "alias": "the-incredible-hulk-coaster-orlando",
+          "name": "The Incredible Hulk Coaster",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/77KS3OIWWtC1KilSewUwWQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-incredible-hulk-coaster-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 169,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.472313,
+              "longitude": -81.466069
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6300 Hollywood Way",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6300 Hollywood Way",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11219.980056697634
+      },
+      {
+          "id": "pRzdvg_CfhCPoGOFARIblA",
+          "alias": "the-amazing-adventures-of-spider-man-orlando",
+          "name": "The Amazing Adventures of Spider-Man",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/T2ACLa0L3ATd7IMh295D4Q/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-amazing-adventures-of-spider-man-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 145,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.470959,
+              "longitude": -81.469868
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Blvd",
+              "address2": "",
+              "address3": "Universal Orlando Resort",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Blvd",
+                  "Universal Orlando Resort",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11599.9780678442
+      },
+      {
+          "id": "s9NgHKGRT_TGAhxo60o2kw",
+          "alias": "harry-potter-and-the-escape-from-gringotts-orlando",
+          "name": "Harry Potter And The Escape From Gringotts",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/lB6tO6L9YHhdoJhSH3QdEQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/harry-potter-and-the-escape-from-gringotts-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 202,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.479808,
+              "longitude": -81.46996
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Blvd",
+              "address2": "",
+              "address3": null,
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Blvd",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 10997.12972524359
+      },
+      {
+          "id": "smPOuy1Cuiy3QCFLhu173A",
+          "alias": "fun-spot-america-orlando-8",
+          "name": "Fun Spot America",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/AzAOs0haBgQCfGL1R22CXw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/fun-spot-america-orlando-8?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 252,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 28.4666773,
+              "longitude": -81.4505405
+          },
+          "transactions": [],
+          "location": {
+              "address1": "5700 Fun Spot Way",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "5700 Fun Spot Way",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073633867",
+          "display_phone": "(407) 363-3867",
+          "distance": 10584.77786266187
+      },
+      {
+          "id": "uqNmiBDuLQppT8qfT1vBMg",
+          "alias": "popeye-and-blutos-bilge-rat-barges-orlando",
+          "name": "Popeye & Bluto's Bilge-Rat Barges",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HFGIX6QfKd5ErrD0QinyOA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/popeye-and-blutos-bilge-rat-barges-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 60,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.4705304200869,
+              "longitude": -81.4717125892639
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Blvd",
+              "address2": "",
+              "address3": "Universal Orlando Resort",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Blvd",
+                  "Universal Orlando Resort",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11768.652860842676
+      },
+      {
+          "id": "P7xWC-tsKwPsFQ4zFsZxYw",
+          "alias": "universals-islands-of-adventure-orlando",
+          "name": "Universal's Islands of Adventure",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/zHREgBvLV1ZV-HNQJUY9Ow/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/universals-islands-of-adventure-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 1120,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 28.477534,
+              "longitude": -81.46919
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Studios Plz",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Studios Plz",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11108.086661650246
+      },
+      {
+          "id": "985d0h0IxdQF8-Ixn97I_g",
+          "alias": "hogwarts-express-orlando",
+          "name": "Hogwarts Express",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HFKuZ62O46RUiVxI6d6HpA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/hogwarts-express-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 100,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.474329,
+              "longitude": -81.467825
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Blvd",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Blvd",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11206.542339621377
+      },
+      {
+          "id": "1dQxcUOnqUY_XfSr67UNuQ",
+          "alias": "kings-cross-station-orlando",
+          "name": "King's Cross Station",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/w5OAP2PpFWWtZKXTZY7dzw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/kings-cross-station-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 46,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              },
+              {
+                  "alias": "trainstations",
+                  "title": "Train Stations"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 28.479149,
+              "longitude": -81.469553
+          },
+          "transactions": [],
+          "location": {
+              "address1": "Earthquake Backstage Rd",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "Earthquake Backstage Rd",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 11008.769049156639
+      },
+      {
+          "id": "WD14m1ZyIM0zRcf57UOhSg",
+          "alias": "jurassic-park-river-adventure-orlando",
+          "name": "Jurassic Park River Adventure",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/QrJ01Rusyy1mlaaF2G02ag/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/jurassic-park-river-adventure-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 94,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 28.4704367313795,
+              "longitude": -81.4735066346336
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Blvd",
+              "address2": "",
+              "address3": "Universal Orlando Resort",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Blvd",
+                  "Universal Orlando Resort",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11910.393221767208
+      },
+      {
+          "id": "nk1-y8Fu3KPnJXNT9XFkYw",
+          "alias": "the-simpsons-ride-orlando",
+          "name": "The Simpsons Ride",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/DRwX_CDPVLcryn7Fm3AFtg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-simpsons-ride-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 145,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 28.4795369434816,
+              "longitude": -81.4676570892334
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Blvd",
+              "address2": "",
+              "address3": "Universal Orlando Resort",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Blvd",
+                  "Universal Orlando Resort",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 10834.731216686087
+      },
+      {
+          "id": "al8ZNfgnv4HQ4UPwGCKFAQ",
+          "alias": "transformers-the-ride-3d-orlando",
+          "name": "Transformers: The Ride 3D",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/1xiAW3dNnbFXCks60A82cQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/transformers-the-ride-3d-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 134,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 28.476692,
+              "longitude": -81.468565
+          },
+          "transactions": [],
+          "location": {
+              "address1": "Sunset Blvd",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "Sunset Blvd",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 11098.23744178091
+      },
+      {
+          "id": "kWSuSb-aIkHy0Jf3iz3CrA",
+          "alias": "the-leaky-cauldron-orlando-3",
+          "name": "The Leaky Cauldron",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/rz4JF6j9LogB-R4IRrJfYg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-leaky-cauldron-orlando-3?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 585,
+          "categories": [
+              {
+                  "alias": "pubs",
+                  "title": "Pubs"
+              },
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              },
+              {
+                  "alias": "fishnchips",
+                  "title": "Fish & Chips"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 28.4793246762034,
+              "longitude": -81.4696651558197
+          },
+          "transactions": [
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "6000 Universal Blvd",
+              "address2": null,
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Blvd",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11005.89267501881
+      },
+      {
+          "id": "kqe26xbZHbPv1wYutyFcNw",
+          "alias": "universal-studios-florida-orlando-2",
+          "name": "Universal Studios Florida",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VUGcDN4hyzDsUEmH7Wsnpw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/universal-studios-florida-orlando-2?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 1858,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 28.47781,
+              "longitude": -81.4719
+          },
+          "transactions": [],
+          "location": {
+              "address1": "6000 Universal Studios Plz",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "6000 Universal Studios Plz",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 11108.086661650246
+      },
+      {
+          "id": "RXuzGho1IpeVd865hONbLw",
+          "alias": "despicable-me-minion-mayhem-orlando",
+          "name": "Despicable Me Minion Mayhem",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/qtp3pliYu0qMZB1Pw5zweA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/despicable-me-minion-mayhem-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 89,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 28.4753567861003,
+              "longitude": -81.467854231596
+          },
+          "transactions": [],
+          "location": {
+              "address1": "Nickelodeon Way",
+              "address2": "",
+              "address3": "",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "Nickelodeon Way",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 11136.499111241848
+      },
+      {
+          "id": "F9riYyU3ASJqZSxSCYFdGg",
+          "alias": "men-in-black-alien-attack-orlando",
+          "name": "MEN IN BLACK Alien Attack",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/AApGcOY4XxetqDTkkIgGlQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/men-in-black-alien-attack-orlando?adjust_creative=Yv4LCvsm1QJ6GtOp27fQ_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Yv4LCvsm1QJ6GtOp27fQ_w",
+          "review_count": 117,
+          "categories": [
+              {
+                  "alias": "amusementparks",
+                  "title": "Amusement Parks"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 28.4802895607375,
+              "longitude": -81.4676258955536
+          },
+          "transactions": [],
+          "location": {
+              "address1": "1000 Universal Studios Plz",
+              "address2": "",
+              "address3": "Universal Orlando Resort",
+              "city": "Orlando",
+              "zip_code": "32819",
+              "country": "US",
+              "state": "FL",
+              "display_address": [
+                  "1000 Universal Studios Plz",
+                  "Universal Orlando Resort",
+                  "Orlando, FL 32819"
+              ]
+          },
+          "phone": "+14073638000",
+          "display_phone": "(407) 363-8000",
+          "distance": 10781.971314345887
+      }
+  ],
+  "total": 77,
+  "region": {
+      "center": {
+          "longitude": -81.3792365,
+          "latitude": 28.5383355
+      }
+  }
+}

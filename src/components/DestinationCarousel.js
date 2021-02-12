@@ -7,7 +7,7 @@ const DestinationCarousel = ({ destinations, title }) => {
   const carouselClass = title.replace(/\s+/g, '-').toLowerCase()
 
   const destinationComponents = destinations.map(destination =>
-    <LocationCard title={ destination.name } photo={ destination.imageUrl } />
+    <LocationCard title={ destination.name } photo={ destination.imageUrl } slug={ destination.slug } url={ destination.url } />
   )
 
   const responsive = {

@@ -8,6 +8,7 @@ import Login from './components/Login'
 import SignUp from './components/SignUp'
 import Register from './components/Register'
 import ForgotPassword from './components/ForgotPassword'
+import Destination from './components/Destination'
 import React, { useState, useEffect } from 'react'
 import { Switch } from 'react-router'
 import {
@@ -19,7 +20,7 @@ import { AuthProvider } from './contexts/AuthContext'
 import PrivateRoute from './components/PrivateRoute'
 import axios from 'axios'
 
-const BASE_URL = 'http://localhost:8080/destinations'
+const BASE_URL = 'http://localhost:8080/top-destinations'
 
 // const topDestinations = [
 //   {
@@ -84,6 +85,7 @@ function App() {
               <Route exact path="/signup" component={ SignUp } />
               <Route exact path="/register" component={ Register } />
               <Route exact path="/forgot-password" component={ ForgotPassword } />
+              <Route exact path="/destinations/:slug" component={ Destination } />
             </Switch>
           </div>
 
