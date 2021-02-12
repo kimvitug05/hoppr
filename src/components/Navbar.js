@@ -54,7 +54,7 @@ const Navbar = () => {
                   <ul className="dropdown dropdown-menu dropdown-menu-dark dropdown-menu-right" aria-labelledby="userDropdown">
                     <li><Link className="dropdown-item py-2" to="/profile">Profile</Link></li>
                     <li><Link className="dropdown-item py-2" to="/settings">Settings</Link></li>
-                    <li><hr class="dropdown-divider" /></li>
+                    <li><hr className="dropdown-divider" /></li>
                     <li><div className="cursor-pointer dropdown-item py-2" onClick={ handleLogout }>Logout</div></li>
                   </ul>
                 </li>
