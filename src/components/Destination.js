@@ -61,7 +61,7 @@ const Destination = (props) => {
               </h1>
             </div>
             <div className="container card my-5 p-5">
-              <p>
+              <p className="destination-description">
                 <em>
                   { destination.description }
                 </em>

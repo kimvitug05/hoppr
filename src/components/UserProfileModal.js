@@ -1,6 +1,9 @@
 import React from 'react'
+import { useAuth } from '../contexts/AuthContext'
 
 const UserProfileModal = () => {
+  const { currentUser } = useAuth()
+
   return (
     <div className="container">
       <div className="row">
@@ -13,7 +16,7 @@ const UserProfileModal = () => {
           />
           <div className="d-flex flex-column card-body">
             <div className="row">
-              <div className="col col-auto">
+              <div className="col col-auto user-avatar-col">
                 <img 
                   alt="user avatar"
                   className="avatar-img border border-white rounded-circle"
@@ -22,9 +25,15 @@ const UserProfileModal = () => {
                 ></img>
               </div>
               <div className="col">
-                <h4 className="card-title mb-1">John Doe</h4>
-                <p className="mb-2"><strong>Seattle, WA</strong></p>
-                <p><strong>123</strong> Followers <strong className="ml-2">200</strong> Following</p>
+                {
+                  currentUser &&
+                  <h4 className="card-title mb-0 user-name">{ currentUser.displayName }</h4>
+                }
+                {
+                  currentUser && currentUser.location &&
+                  <p className="mb-2 user-location">Seattle, WA</p>
+                }
+                {/* <p><strong>123</strong> Followers <strong className="ml-2">200</strong> Following</p> */}
               </div>
             </div>
           </div>

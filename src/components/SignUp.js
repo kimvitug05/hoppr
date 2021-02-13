@@ -23,11 +23,9 @@ const SignUp = () => {
     try {
       setError('')
       setLoading(true)
-      signup(emailRef.current.value, passwordRef.current.value)
-      history.push('/register')
-      // .then(() => {
-      //   // TODO: REDIRECT AFTER LOGIN
-      // })
+      signup(emailRef.current.value, passwordRef.current.value, displayNameRef.current.value).then(() => {
+        history.push('/register')
+      })
     } catch {
       setError('Failed to create an account')
     }
@@ -44,24 +42,24 @@ const SignUp = () => {
             <form id="signup-form" className="form" onSubmit={ handleSubmit }>
               <h3 className="text-center text-info">Sign Up</h3>
               <div className="form-group">
-                <label for="firstname" className="text-info">Display Name:</label>
+                <label htmlFor="firstname" className="text-info">Display Name:</label>
                 <br />
-                <input type="text" name="displayName" id="displayName" className="form-control" required="true" ref={ displayNameRef } />
+                <input type="text" name="displayName" id="displayName" className="form-control" required={ true } ref={ displayNameRef } />
               </div>
               <div className="form-group">
-                <label for="email" className="text-info">Email:</label>
+                <label htmlFor="email" className="text-info">Email:</label>
                 <br />
-                <input type="text" name="email" id="email" className="form-control" required="true" ref={ emailRef } />
+                <input type="text" name="email" id="email" className="form-control" required={ true } ref={ emailRef } />
               </div>
               <div className="form-group">
-                <label for="password" className="text-info">Password:</label>
+                <label htmlFor="password" className="text-info">Password:</label>
                 <br />
-                <input type="password" name="password" id="password" className="form-control" required="true" ref={ passwordRef } />
+                <input type="password" name="password" id="password" className="form-control" required={ true } ref={ passwordRef } />
               </div>
               <div className="form-group">
-                <label for="confirm-password" className="text-info">Confirm Password:</label>
+                <label htmlFor="confirm-password" className="text-info">Confirm Password:</label>
                 <br />
-                <input type="password" name="confirm-password" id="confirm-password" className="form-control" required="true" ref={ confirmPasswordRef } />
+                <input type="password" name="confirm-password" id="confirm-password" className="form-control" required={ true } ref={ confirmPasswordRef } />
               </div>
               <div className="form-group">
                 <input className="btn btn-info btn-rounded" disabled={ loading } name="submit" type="submit" value="submit" />

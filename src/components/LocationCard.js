@@ -1,12 +1,44 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 import Heart from 'react-animated-heart'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import './LocationCard.css'
+const BASE_URL = 'http://localhost:8080/destinations'
 
 const LocationCard = ({ photo, slug, title, url }) => {
-  const [isClick, setClick] = useState(false)
+  const [isFavorite, setIsFavorite] = useState(false)
   const { currentUser } = useAuth()
+
+  const onFavorite = async () => {
+    setIsFavorite(!isFavorite)
+
+    if (!isFavorite) {
+      let firebaseToken = ''
+      if (currentUser) {
+        firebaseToken = await currentUser.getIdToken()
+      }
+      await axios.post(`${BASE_URL}/${slug}/favorite`, null, {
+        headers: {
+          Authorization: firebaseToken ? `Bearer ${firebaseToken}` : undefined
+        }
+      }).catch(() => {
+        setIsFavorite(!isFavorite)
+      })
+    } else {
+      let firebaseToken = ''
+      if (currentUser) {
+        firebaseToken = await currentUser.getIdToken()
+      }
+      await axios.delete(`${BASE_URL}/${slug}/unfavorite`, {
+        headers: {
+          Authorization: firebaseToken ? `Bearer ${firebaseToken}` : undefined
+        }
+      }).catch(() => {
+        setIsFavorite(!isFavorite)
+      })
+    }
+  }
 
   return (
     <div className="container">
@@ -29,7 +61,7 @@ const LocationCard = ({ photo, slug, title, url }) => {
           }
           {
             currentUser && !url &&
-            <Heart className="favorite-button" isClick={isClick} onClick={() => setClick(!isClick)} />
+            <Heart className="favorite-button" isClick={ isFavorite } onClick={ onFavorite } />
           }
         </div>
       </div>

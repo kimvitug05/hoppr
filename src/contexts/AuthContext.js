@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { auth } from '../firebase'
+import cloneDeep from 'lodash/cloneDeep'
 
 const AuthContext = React.createContext()
 
@@ -11,15 +12,14 @@ export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState()
   const [loading, setLoading] = useState(true)
 
-  function signup(email, password) {
-    return auth.createUserWithEmailAndPassword(email, password)
-    // .then(async () => {
-    //   return new Promise(async resolve => {
-    //     resolve(await currentUser.updateProfile({
-    //       displayName: [ firstName, lastName ].join(' ')
-    //     }))
-    //   }, 100)
-    // })
+  function signup(email, password, displayName) {
+    return auth.createUserWithEmailAndPassword(email, password).then(() => {
+      auth.currentUser.updateProfile({ displayName }).then(() => {
+        const user = cloneDeep(auth.currentUser)
+        user.displayName = displayName
+        setCurrentUser(user)
+      })
+    })
   }
 
   function login(email, password) {

@@ -5,5 +5,38 @@
 .avatar-img {
   border-width: 8px !important;
   margin-top: -50%;
-  max-width: 15em;
+  max-width: 8em;
+}
+
+@media (max-width: 767px) {
+  .card.rounded {
+    border-radius: 0 !important;
+  }
+  .user-location {
+    font-size: 0.9em;
+  }
+  .user-name {
+    font-size: 1.25em;
+  }
+  .user-avatar-col {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .avatar-img {
+    max-width: 10em;
+  }
+  .user-name {
+    font-size: 2em;
+  }
+  .user-profile {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .avatar-img {
+    max-width: 15em;
+  }
 }
