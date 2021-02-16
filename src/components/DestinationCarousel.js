@@ -5,7 +5,7 @@ import 'react-multi-carousel/lib/styles.css'
 
 const DestinationCarousel = ({ destinations, title }) => {
   const destinationComponents = destinations.map(destination =>
-    <LocationCard key={ destination.name } title={ destination.name } photo={ destination.imageUrl } slug={ destination.slug } url={ destination.url } />
+    <LocationCard key={ destination.name } destination={ destination } />
   )
 
   const responsive = {

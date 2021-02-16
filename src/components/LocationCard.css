@@ -16,3 +16,7 @@
   height: 15rem;
   object-fit: cover;
 }
+
+.discover-title {
+  font-size: 1.25em;
+}

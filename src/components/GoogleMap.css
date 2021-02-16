@@ -1,0 +1,10 @@
+.info-window-card {
+  max-width: 25em;
+  max-height: 25em; 
+  object-fit: cover;
+}
+
+.info-window-destination-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}

@@ -1,29 +1,83 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link, useLocation} from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import EditImageModal from './EditImageModal'
+import EditBackgroundImageModal from './EditBackgroundImageModal'
 
-const UserProfileModal = () => {
+const UserProfileModal = ({ edit }) => {
   const { currentUser } = useAuth()
+  const location = useLocation()
+  const [showEditAvatarModal, setShowEditAvatarModal] = useState(false)
+  const [showEditBackgroundPictureModal, setShowEditBackgroundPictureModal] = useState(false)
+
+  const closeAvatarModalHandler = () => setShowEditAvatarModal(false);
+  const closeBackgroundPictureModalHandler = () => setShowEditBackgroundPictureModal(false);
 
   return (
     <div className="container">
       <div className="row">
-        <div className="card col overflow-hidden px-0 rounded">
-          <img
-            alt="user background"
-            className="card-img-top"
-            src="https://images.unsplash.com/photo-1517848568502-d03fa74e1964?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2850&q=80"
-            style={{ maxHeight: '400px', objectFit: 'cover' }}
-          />
+        <div className="card col overflow-hidden px-0 rounded user-profile-card">
+          <div className="background-wrapper">
+            <img
+              alt="user background"
+              className="background-img card-img-top"
+              data-holder-rendered="true"
+              src={ currentUser.background_image_url || 'https://i.imgur.com/3byaZEB.jpg' }
+              style={{ maxHeight: '400px', objectFit: 'cover' }}
+            />
+            {
+              edit &&
+              <div className="align-items-center img-overlay row">
+                <button 
+                  className="col icon btn btn-link"
+                  data-target="#background" 
+                  data-toggle="modal"
+                  style={ { height: '100%' } }
+                  title="Background" 
+                  type="button" 
+                  onClick={ () => setShowEditBackgroundPictureModal(true) }
+                >
+                  <i className="fa fa-edit fa-lg" style={{ color: "white" }}></i>
+                </button>
+              </div>
+            }
+          </div>
+          {
+            showEditBackgroundPictureModal &&
+            <EditBackgroundImageModal close={ closeBackgroundPictureModalHandler } />
+          }
           <div className="d-flex flex-column card-body">
             <div className="row">
               <div className="col col-auto user-avatar-col">
-                <img 
-                  alt="user avatar"
-                  className="avatar-img border border-white rounded-circle"
-                  data-holder-rendered="true"
-                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"
-                ></img>
+                <div className="avatar-wrapper">
+                  <img 
+                    alt="user avatar"
+                    className="avatar-img border border-white rounded-circle"
+                    data-holder-rendered="true"
+                    src={ currentUser.photoURL || 'https://i.imgur.com/fdi7cLt.png' }
+                  ></img>
+                  {
+                    edit &&
+                    <div className="align-items-center border border-white img-overlay rounded-circle row">
+                      <button 
+                        className="col icon btn btn-link"
+                        data-target="#profile" 
+                        data-toggle="modal"
+                        style={ { height: '100%' } }
+                        title="User Profile" 
+                        type="button" 
+                        onClick={ () => setShowEditAvatarModal(true) }
+                      >
+                        <i className="fa fa-edit fa-lg" style={{ color: "white" }} ></i>
+                      </button>
+                    </div>
+                  }
+                </div>
               </div>
+              {
+                showEditAvatarModal &&
+                <EditImageModal close={ closeAvatarModalHandler } title="Profile" height={ 400 } width={ 400 }  />
+              }
               <div className="col">
                 {
                   currentUser &&
@@ -31,12 +85,22 @@ const UserProfileModal = () => {
                 }
                 {
                   currentUser && currentUser.location &&
-                  <p className="mb-2 user-location">Seattle, WA</p>
+                  <p className="mb-2 user-location">{ currentUser.location }</p>
                 }
                 {/* <p><strong>123</strong> Followers <strong className="ml-2">200</strong> Following</p> */}
               </div>
             </div>
           </div>
+          {
+            (!location || location.pathname !== '/edit-profile') &&
+            <div className="container">
+              <div className="justify-content-end mb-3 mr-1 row">
+                <Link to="edit-profile">
+                  <button className="btn btn-outline-info">Update</button>
+                </Link>
+              </div>
+            </div>
+          }
         </div>
       </div>
     </div>

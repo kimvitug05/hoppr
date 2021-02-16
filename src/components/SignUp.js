@@ -24,7 +24,7 @@ const SignUp = () => {
       setError('')
       setLoading(true)
       signup(emailRef.current.value, passwordRef.current.value, displayNameRef.current.value).then(() => {
-        history.push('/register')
+        history.push('/profile')
       })
     } catch {
       setError('Failed to create an account')

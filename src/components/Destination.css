@@ -22,17 +22,32 @@
   left: 0;
 }
 
+.destination-description-wrapper {
+  border: none;
+  margin-top: 1.5em;
+  padding: 1.5em;
+}
+
 .destination-description {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .destination-name {
   background: rgba(0, 0, 0, 0.35);
-  font-size: 5em;
+  font-size: 2.5em;
 }
 
 @media (min-width: 576px) {
   .destination-name {
     font-size: 4em !important;
+  }
+  .destination-description {
+    font-size: 1.5em;
+  }
+  .destination-description-wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 5em;
+    margin-top: 5em;
+    padding: 3em;
   }
 }

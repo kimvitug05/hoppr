@@ -4,14 +4,14 @@ import { useAuth } from '../contexts/AuthContext'
 import DestinationCarousel from './DestinationCarousel'
 import axios from 'axios'
 import './Destination.css'
-const BASE_URL = 'http://localhost:8080/destinations'
-const restaurants = require('../data/yelp_places.json')
-const amusement = require('../data/amusement.json')
-const beach = require('../data/beaches.json')
+const BASE_URL = `${process.env.REACT_APP_BASE_URL}/destinations`
 
 const Destination = (props) => {
   const { currentUser } = useAuth()
   const [destination, setDestination] = useState(null)
+  const [topActive, setTopActive] = useState([])
+  const [topEats, setTopEats] = useState([])
+  const [topEntertainment, setTopEntertainment] = useState([])
   const slug = props.match.params.slug
 
   useEffect(() => {
@@ -25,29 +25,71 @@ const Destination = (props) => {
           Authorization: firebaseToken ? `Bearer ${firebaseToken}` : undefined
         }
       }).then((response) => {
-        setDestination(response.data);
+        setDestination(response.data)
       })
     }
     assignDestination()
+
+    const assignTopEats = async () => {
+      let firebaseToken = ''
+      if (currentUser) {
+        firebaseToken = await currentUser.getIdToken()
+      }
+      await axios.get(`${BASE_URL}/${slug}/top-eats`, {
+        headers: {
+          Authorization: firebaseToken ? `Bearer ${firebaseToken}` : undefined
+        }
+      }).then((response) => {
+        const mappedTopEats = response.data.map(business => ({
+          imageUrl: business.image_url,
+          name: business.name,
+          url: business.url,
+        }))
+        setTopEats(mappedTopEats)
+      })
+    }
+    assignTopEats()
+
+    const assignTopEntertainment = async () => {
+      let firebaseToken = ''
+      if (currentUser) {
+        firebaseToken = await currentUser.getIdToken()
+      }
+      await axios.get(`${BASE_URL}/${slug}/top-entertainment`, {
+        headers: {
+          Authorization: firebaseToken ? `Bearer ${firebaseToken}` : undefined
+        }
+      }).then((response) => {
+        const mappedTopEntertainment = response.data.map(business => ({
+          imageUrl: business.image_url,
+          name: business.name,
+          url: business.url,
+        }))
+        setTopEntertainment(mappedTopEntertainment)
+      })
+    }
+    assignTopEntertainment()
+
+    const assignTopActive = async () => {
+      let firebaseToken = ''
+      if (currentUser) {
+        firebaseToken = await currentUser.getIdToken()
+      }
+      await axios.get(`${BASE_URL}/${slug}/top-active`, {
+        headers: {
+          Authorization: firebaseToken ? `Bearer ${firebaseToken}` : undefined
+        }
+      }).then((response) => {
+        const mappedTopActive = response.data.map(business => ({
+          imageUrl: business.image_url,
+          name: business.name,
+          url: business.url,
+        }))
+        setTopActive(mappedTopActive)
+      })
+    }
+    assignTopActive()
   }, [ currentUser, slug ])
-
-  const yelpDestinations = restaurants.businesses.map(place => ({
-    imageUrl: place.image_url,
-    name: place.name,
-    url: place.url,
-  }))
-
-  const amusementParks = amusement.businesses.map(place => ({
-    imageUrl: place.image_url,
-    name: place.name,
-    url: place.url,
-  }))
-
-  const beaches = beach.businesses.map(place => ({
-    imageUrl: place.image_url,
-    name: place.name,
-    url: place.url,
-  }))
 
   return (
     <>
@@ -60,7 +102,7 @@ const Destination = (props) => {
                 { destination.name }
               </h1>
             </div>
-            <div className="container card my-5 p-5">
+            <div className="container card destination-description-wrapper">
               <p className="destination-description">
                 <em>
                   { destination.description }
@@ -70,9 +112,18 @@ const Destination = (props) => {
           </>
       }
       <div className="container">
-        <DestinationCarousel title="Top Eats" destinations={ yelpDestinations } />
-        <DestinationCarousel title="Amusement Parks" destinations={ amusementParks } />
-        <DestinationCarousel title="Beaches" destinations={ beaches } />
+        {
+          topEats.length &&
+          <DestinationCarousel title="Top Eats" destinations={ topEats } />
+        }
+        {
+          topEntertainment.length &&
+          <DestinationCarousel title="Top Entertainment" destinations={ topEntertainment } />
+        }
+        {
+          topActive.length &&
+          <DestinationCarousel title="Top Active" destinations={ topActive } />
+        }
       </div>
     </>
   )
