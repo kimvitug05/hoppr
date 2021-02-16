@@ -10,7 +10,7 @@ export default function EditProfile() {
   const locationRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
-  const { currentUser, updateDisplayName, updateEmail, updatePassword, updateLocation } = useAuth()
+  const { currentUser, updateDisplayName, updateEmail, updatePassword, updateLocation, userDetails } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
   const history = useHistory()
@@ -96,7 +96,7 @@ export default function EditProfile() {
                         id="location" 
                         className="form-control" 
                         ref={ locationRef } 
-                        defaultValue={ currentUser.location }
+                        defaultValue={ userDetails.location }
                       />
                     </div>
                     <div className="form-group">

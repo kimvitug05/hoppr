@@ -30,6 +30,8 @@ const DestinationCarousel = ({ destinations, title }) => {
     <div className="pb-4">
       <h3 className='m-3 card-title text-left'>{ title }</h3>
       <Carousel
+        autoplay={ true }
+        autoPlaySpeed={ 6000 }
         keyBoardControl={ false }
         responsive={ responsive }
       >

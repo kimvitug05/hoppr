@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { auth, firestore } from '../firebase'
 import cloneDeep from 'lodash/cloneDeep'
+import merge from 'lodash/merge'
 
 const AuthContext = React.createContext()
 
@@ -11,6 +12,7 @@ export function useAuth () {
 export function AuthProvider ({ children }) {
   const [currentUser, setCurrentUser] = useState()
   const [loading, setLoading] = useState(true)
+  const [userDetails, setUserDetails] = useState({})
 
   function signup (email, password, displayName) {
     const photoURL = 'https://i.imgur.com/fdi7cLt.png'
@@ -38,15 +40,19 @@ export function AuthProvider ({ children }) {
     return auth.sendPasswordResetEmail(email)
   }
 
-  function updateEmail(email) {
-    return currentUser.updateEmail(email)
+  function updateEmail (email) {
+    return currentUser.updateEmail(email).then(() => {
+      const updatedUser = cloneDeep(currentUser)
+      updatedUser.email = email
+      setCurrentUser(updatedUser)
+    })
   }
 
-  function updatePassword(password) {
+  function updatePassword (password) {
     return currentUser.updatePassword(password)
   }
 
-  async function updateDisplayName(displayName) {
+  async function updateDisplayName (displayName) {
     await currentUser.updateProfile({ displayName }).then(() => {
       const updatedUser = cloneDeep(currentUser)
       updatedUser.displayName = displayName
@@ -54,7 +60,7 @@ export function AuthProvider ({ children }) {
     })
   }
 
-  function updateProfileImage(profileImage) {
+  function updateProfileImage (profileImage) {
     return updateProfile({ photoURL: profileImage })
   }
 
@@ -74,36 +80,36 @@ export function AuthProvider ({ children }) {
     return firestore.collection('users').doc(currentUser.uid).set({
       background_image_url: backgroundImageUrl
     }, { merge: true }).then(() => {
-      const updatedUser = cloneDeep(currentUser)
-      updatedUser.background_image_url = backgroundImageUrl
-      setCurrentUser(updatedUser)
+      updateUserDetails({ background_image_url: backgroundImageUrl })
     })
   }
 
   async function updateLocation (location) {
     await firestore.collection('users').doc(currentUser.uid).set({ location }, { merge: true }).then(() => {
-      const updatedUser = cloneDeep(currentUser)
-      updatedUser.location = location
-      setCurrentUser(updatedUser)
+      updateUserDetails({ location })
     })
+  }
+
+  function updateUserDetails (details) {
+    setUserDetails(merge(cloneDeep(userDetails || {}), details))
   }
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async user => {
-      setLoading(true)
       if (user) {
         await firestore.collection('users').doc(user.uid).get().then(dbUser => {
-          const updatedUser = cloneDeep(user)
           const dbUserData = dbUser.data()
-          updatedUser.background_image_url = dbUserData.background_image_url
-          updatedUser.location = dbUserData.location
-          setCurrentUser(updatedUser)
+          setUserDetails({
+            background_image_url: dbUserData.background_image_url,
+            location: dbUserData.location,
+          })
         }).catch(() => {
-          setCurrentUser(undefined)
+          setUserDetails({})
         })
       } else {
-        setCurrentUser(user)
+        setUserDetails({})
       }
+      setCurrentUser(user)
       setLoading(false)
     })
 
@@ -123,6 +129,7 @@ export function AuthProvider ({ children }) {
     updateProfileImage,
     updateBackgroundImage,
     updateLocation,
+    userDetails,
   }
 
   return (

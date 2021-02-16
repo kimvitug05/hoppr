@@ -5,7 +5,7 @@ import EditImageModal from './EditImageModal'
 import EditBackgroundImageModal from './EditBackgroundImageModal'
 
 const UserProfileModal = ({ edit }) => {
-  const { currentUser } = useAuth()
+  const { currentUser, userDetails } = useAuth()
   const location = useLocation()
   const [showEditAvatarModal, setShowEditAvatarModal] = useState(false)
   const [showEditBackgroundPictureModal, setShowEditBackgroundPictureModal] = useState(false)
@@ -22,7 +22,7 @@ const UserProfileModal = ({ edit }) => {
               alt="user background"
               className="background-img card-img-top"
               data-holder-rendered="true"
-              src={ currentUser.background_image_url || 'https://i.imgur.com/3byaZEB.jpg' }
+              src={ userDetails.background_image_url || 'https://i.imgur.com/3byaZEB.jpg' }
               style={{ maxHeight: '400px', objectFit: 'cover' }}
             />
             {
@@ -84,8 +84,8 @@ const UserProfileModal = ({ edit }) => {
                   <h4 className="card-title mb-0 user-name">{ currentUser.displayName }</h4>
                 }
                 {
-                  currentUser && currentUser.location &&
-                  <p className="mb-2 user-location">{ currentUser.location }</p>
+                  userDetails.location &&
+                  <p className="mb-2 user-location">{ userDetails.location }</p>
                 }
                 {/* <p><strong>123</strong> Followers <strong className="ml-2">200</strong> Following</p> */}
               </div>

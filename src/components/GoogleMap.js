@@ -59,7 +59,6 @@ const MapContainer = (props) => {
   }
 
   const goToSelectedDestination = () => {
-    console.log(selectedPlace.destination)
     history.push(`/destinations/${selectedPlace.destination.slug}`)
   }
 
