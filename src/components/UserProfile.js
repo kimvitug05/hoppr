@@ -3,7 +3,7 @@ import './UserProfile.css'
 import DestinationCarousel from './DestinationCarousel'
 import { useAuth } from '../contexts/AuthContext'
 import { useFavorites } from '../contexts/FavoritesContext'
-import UserProfileModal from './UserProfileModal'
+import UserProfileHeader from './UserProfileHeader'
 import axios from 'axios'
 
 const BASE_URL = process.env.REACT_APP_BASE_URL
@@ -32,7 +32,7 @@ const UserProfile = () => {
 
   return (
     <div className="pb-5 user-profile">
-      <UserProfileModal />
+      <UserProfileHeader />
       <div className="container">
         <div className="pt-4">
           {

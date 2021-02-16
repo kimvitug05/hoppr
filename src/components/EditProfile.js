@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
-import UserProfileModal from './UserProfileModal'
+import UserProfileHeader from './UserProfileHeader'
 import './UserProfile.css'
 
 export default function EditProfile() {
@@ -53,7 +53,7 @@ export default function EditProfile() {
   return (
     <>
       <div className="pb-5 user-profile">
-        <UserProfileModal edit={ true } />
+        <UserProfileHeader edit={ true } />
         <div className="container">
           { error && <div className="pb-2 alert alert-warning" role="alert">{ error }</div> }
           <div id="signup-row" className="row justify-content-center align-items-center">

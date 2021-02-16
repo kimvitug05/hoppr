@@ -15,7 +15,7 @@ const Banner = () => {
             <h1>Travel The World With  <span>
                 <img 
                   className="logo-fluid" 
-                  src="./hoppr-logo.png" 
+                  src="/hoppr-logo.png" 
                   alt="logo"
                 />
               </span>
@@ -32,7 +32,7 @@ const Banner = () => {
             <h1>Travel The World With  <span>
                 <img 
                   className="logo-fluid" 
-                  src="./hoppr-logo.png" 
+                  src="/hoppr-logo.png" 
                   alt="logo"
                 />
               </span>
@@ -49,7 +49,7 @@ const Banner = () => {
             <h1>Travel The World With  <span>
                 <img 
                   className="logo-fluid" 
-                  src="./hoppr-logo.png" 
+                  src="/hoppr-logo.png" 
                   alt="logo"
                 />
               </span>

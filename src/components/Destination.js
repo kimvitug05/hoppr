@@ -113,15 +113,15 @@ const Destination = (props) => {
       }
       <div className="container">
         {
-          topEats.length &&
+          !!topEats.length &&
           <DestinationCarousel title="Top Eats" destinations={ topEats } />
         }
         {
-          topEntertainment.length &&
+          !!topEntertainment.length &&
           <DestinationCarousel title="Top Entertainment" destinations={ topEntertainment } />
         }
         {
-          topActive.length &&
+          !!topActive.length &&
           <DestinationCarousel title="Top Active" destinations={ topActive } />
         }
       </div>

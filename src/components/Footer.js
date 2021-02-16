@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}>
       © 2021  <span>
         <img 
-          src="./hoppr-logo2.png" 
+          src="/hoppr-logo2.png" 
           alt="logo" 
           className="logo-footer" 
           style={{ height: "1.25em", marginBottom: "0.28em" }} />

@@ -4,7 +4,7 @@ import { useAuth } from '../contexts/AuthContext'
 import EditImageModal from './EditImageModal'
 import EditBackgroundImageModal from './EditBackgroundImageModal'
 
-const UserProfileModal = ({ edit }) => {
+const UserProfileHeader = ({ edit }) => {
   const { currentUser, userDetails } = useAuth()
   const location = useLocation()
   const [showEditAvatarModal, setShowEditAvatarModal] = useState(false)
@@ -107,4 +107,4 @@ const UserProfileModal = ({ edit }) => {
   )
 }
 
-export default UserProfileModal
+export default UserProfileHeader

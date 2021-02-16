@@ -50,7 +50,7 @@ const Navbar = () => {
       <Link className="navbar-brand" to="/">
         <img 
           className="img-fluid" 
-          src="./hoppr-logo.png" 
+          src="/hoppr-logo.png" 
           alt="logo"
         />
       </Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
                 currentUser ?
                   <>
                     <li className="dropdown">
-                      <a className="dropdown-toggle nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a className="dropdown-toggle nav-link" href="." id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img
                           alt="user avatar"
                           className="align-self-center rounded-circle"
