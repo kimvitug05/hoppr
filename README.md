@@ -4,6 +4,19 @@
 
 ## Tech Stack
 
+- **Frontend:**
+React (JavaScript/HTML/CSS) & Material Design for Bootstrap
+- **Backend:**
+Spring Boot (Java)
+- **Authorization:**
+Firebase Authorization
+- **Database:**
+Firebase Cloud Firestore & PostgreSQL
+- **Image Hosting:**
+Firebase Storage
+- **Deployment:**
+Heroku
+
 ## Hoppr Repositories
 - Frontend: https://github.com/kimvitug05/hoppr
 - Backend: https://github.com/kimvitug05/hoppr-backend
