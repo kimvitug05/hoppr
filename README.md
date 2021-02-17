@@ -1,6 +1,7 @@
 <img width="327" alt="Screen Shot 2021-02-16 at 7 31 46 PM" src="https://user-images.githubusercontent.com/56857522/108152599-31512300-708e-11eb-8d19-11c821ecbeb9.png">
 
 ## Overview
+I miss traveling & I'm sure you do too! Hoppr is a web app where users can find popular travel destinations (in the US)! Users can view over 100 popular US cities and highly rated restaurants and activities in that area. Not sure where you want to go? There's also an explore feature where you can utilize street view. Discover your next vacation with Hoppr!
 
 ## Tech Stack
 
