@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+<img width="327" alt="Screen Shot 2021-02-16 at 7 31 46 PM" src="https://user-images.githubusercontent.com/56857522/108152599-31512300-708e-11eb-8d19-11c821ecbeb9.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+I miss traveling & I'm sure you do too! Hoppr is a web app where users can find popular travel destinations! Users can view over 100 popular US cities and highly rated restaurants and activities in that area. Not sure where you want to go? There's also an explore feature where you can utilize street view (it's like you're there IRL). Discover your next vacation with Hoppr!
 
-## Available Scripts
+<img width="250" alt="Screen Shot 2021-02-16 at 9 01 31 PM" src="https://user-images.githubusercontent.com/56857522/108159012-fc979880-709a-11eb-82d0-0dc3bb7d2fdc.png"><img width="250" alt="Screen Shot 2021-02-16 at 9 02 20 PM" src="https://user-images.githubusercontent.com/56857522/108159075-1cc75780-709b-11eb-86fc-f98ca01f9a2c.png"><img width="250" alt="Screen Shot 2021-02-16 at 9 02 59 PM" src="https://user-images.githubusercontent.com/56857522/108159143-3cf71680-709b-11eb-992d-e468dc60050a.png">
 
-In the project directory, you can run:
+## Tech Stack
 
-### `yarn start`
+- **Frontend:**
+React (JavaScript/HTML/CSS) & Material Design for Bootstrap
+- **Backend:**
+Spring Boot (Java)
+- **APIs:**
+Sabre Top Destinations API
+Google Maps JavaScript API
+Yelp Fusion API
+- **Authorization:**
+Firebase Authorization
+- **Database:**
+Firebase Cloud Firestore & PostgreSQL
+- **Image Hosting:**
+Firebase Storage
+- **Deployment:**
+Heroku
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Hoppr Repositories
+- Frontend: https://github.com/kimvitug05/hoppr
+- Backend: https://github.com/kimvitug05/hoppr-backend
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Trello Board
+- https://trello.com/b/cyqEzREU/hoppr
 
-### `yarn test`
+## Wireframes
+- https://www.figma.com/file/AkZ8wbekc8P22t2GNj9VyU/Hoppr-Wireframes?node-id=0%3A1
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo Video
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## FAQ
+- **What Inspired Hoppr?**
+- **What Did You Learn?**
+- **What Did You Struggle With?**
+- **Future Enhancements?**
