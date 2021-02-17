@@ -52,7 +52,7 @@
 }
 
 @media (max-width: 767px) {
-  .card.rounded {
+  .user-profile-card {
     border-radius: 0 !important;
   }
   .user-location {

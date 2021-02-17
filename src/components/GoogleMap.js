@@ -82,6 +82,7 @@ const MapContainer = (props) => {
   return (
     <Map
       center={ (activeMarker || { position: { lat: 39.7392, lng: -104.9903 } }).position }
+      containerStyle={{ maxHeight: 'calc(100vh - 112px)' }}
       google={ props.google }
       style={{ maxHeight: 'calc(100vh - 56px - 56px)' }}
       zoom={ 4 }
