@@ -35,9 +35,25 @@ Heroku
 - https://www.figma.com/file/AkZ8wbekc8P22t2GNj9VyU/Hoppr-Wireframes?node-id=0%3A1
 
 ## Demo Video
+- https://www.youtube.com/watch?v=bvz0kJ1cQgo&feature=youtu.be
 
 ## FAQ
-- **What Inspired Hoppr?**
-- **What Did You Learn?**
-- **What Did You Struggle With?**
-- **Future Enhancements?**
+#### **What Inspired Hoppr?**
+
+- I love traveling. I miss traveling. I can't wait to travel again. 
+
+#### **What Did You Learn?**
+
+- I learned new technologies (Spring Boot & Firebase Products), learned about caching in Java & I discovered the pains of deployment! 
+
+#### **What Did You Struggle With?**
+
+- The most difficult part about this project was data aggregation. There was no one API that had all the information I needed; alot of the APIs that would have worked well with my project are B2B (business to business) only. The first few days of capstone didn't consist of coding, but filling out a spreadsheet to populate my database. 
+
+#### **Future Enhancements?**
+
+- Add international locations
+- Add a section that gets ticket prices from user’s current location to a destination
+- Add ‘Similar To’ section 
+- Add followers/following functionality
+
