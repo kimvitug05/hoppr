@@ -59,7 +59,7 @@ const LocationCard = ({ destination: { imageUrl, name, slug, url } }) => {
         <div className="d-flex flex-row justify-content-between card-body">
           {
             (url && <h4 className="card-title mb-0 text-left text-truncate">{ name }</h4>) ||
-            <Link to="/destination" style={{ textDecoration: "none", color: "#343a40" }}>
+            <Link to={ `/destinations/${slug}`} style={{ textDecoration: "none", color: "#343a40" }}>
               <h4 className="card-title mb-0 text-left text-truncate">{ name }</h4>
             </Link>
           }
